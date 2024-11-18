@@ -1,0 +1,69 @@
+/* Navbar container */
+.navbar-container {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.1s ease;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    position: absolute;
+    top: -100px; /* Initially hide above the container */
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: top 0.3s ease-in-out;
+  }
+  
+  /* Navbar links container */
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Navbar list items - hidden initially */
+  .navbar-container .navbar li {
+    display: none;
+    padding: 10px 20px;
+  }
+  
+  /* On hover, navbar appears and slides down */
+  .navbar-container:hover .navbar {
+    top: 0;
+  }
+  
+  .navbar-container:hover .navbar li {
+    display: inline-block;
+    text-align: center;
+  }
+  
+  /* Navbar links styles */
+  .navbar-container .navbar li a {
+    text-decoration: none;
+    color: white;
+    /* transition: color 0.3s ease, opacity 0.3s ease; */
+  }
+  
+  .navbar-container:hover .navbar li a {
+    color: azure;
+  }
+  
+  .navbar-container:hover .navbar li a:hover {
+    opacity: 0.7;
+    font-size: 17px;
+    transition: 0.4s ease;
+  }
+  
